@@ -69,7 +69,7 @@ end
 end
 
 def movies_with_directors_set(source)
-  source.map{|director| movies_with_director_key(director[:name], director[:movie])}
+  source.map{|director| movies_with_director_key(director[:name], director[:movies])}
   
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
